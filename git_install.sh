@@ -8,6 +8,6 @@ else
 	auto_flg=0
 fi
 
-sudo apt-get install git -y
+sudo apt-get install git -yV
 sudo git config --global user.email "ku_skyline_wa@yahoo.co.jp"
 sudo git config --global user.name "calm0815"

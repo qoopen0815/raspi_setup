@@ -46,7 +46,6 @@ sudo ln -s /usr/local/lib/libtinyxml2.so libtinyxml2.so
 
 echo "Install OpenCV3 (only for desktop build)"
 sudo apt install -yV libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libgtk2.0-dev libatlas-base-dev gfortran python-numpy
-mkdir ~/gitprojects
 cd ~/gitprojects
 git clone https://github.com/opencv/opencv.git -b 3.4.1 --depth 1 opencv_source
 cd opencv_source
