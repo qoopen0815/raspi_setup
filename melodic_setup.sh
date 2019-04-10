@@ -23,7 +23,7 @@ wstool init -j2 src_isolated melodic-desktop.rosinstall
 
 echo "Install dependent program"
 cd ~/ros_catkin_ws/
-rosdep install --from-paths src_isolated --ignore-src --rosdistro melodic -yV
+rosdep install --from-paths src_isolated --ignore-src --rosdistro melodic -y
 
 echo "Update problematic dependent programs"
 cd ~/ros_catkin_ws/src_isolated/
@@ -50,14 +50,14 @@ cd ~/gitprojects
 git clone https://github.com/opencv/opencv.git -b 3.4.1 --depth 1 opencv_source
 cd opencv_source
 mkdir build
-cd build
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make -j2
-sudo make install
+#cd build
+#cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+#make -j`nproc`
+#sudo make install
 
 echo "Build"
 cd ~/ros_catkin_ws
-./src_isolated/catkin/bin/catkin_make_isolated -j1 --install --source src_isolated -DCMAKE_BUILD_TYPE=Release
+./src_isolated/catkin/bin/catkin_make_isolated -j`nproc` --install --source src_isolated -DCMAKE_BUILD_TYPE=Release
 
 echo "Load ROS"
 echo "source ~/ros_catkin_ws/devel_isolated/setup.bash" >> ~/.bashrc
