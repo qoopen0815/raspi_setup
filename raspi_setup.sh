@@ -28,7 +28,7 @@ initial_update_package()
 {
 	# update package
 	sudo apt update
-	sudo apt -y upgrade
+	sudo apt -yV upgrade
 
 	# update firmware
     sudo apt install rpi-update
