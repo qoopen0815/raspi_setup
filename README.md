@@ -29,6 +29,10 @@ sudo /etc/init.d/dphys-swapfile restart
 - Installation of Raspbian Stretch
 - Connect to Network
 
+## Heat Sink
+If you use Raspberry Pi3 for heavy processing without a heat sink, it will often become unresponsive, probably due to thermal runaway.
+Therefore, I recommend using a heat sink if you want Raspberry Pi3 to perform heavy processing.
+
 ## Before Installation
 - Initial Update
 - Expand Filesystem
