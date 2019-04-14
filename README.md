@@ -8,7 +8,7 @@ Raspbian stretch auto setup script
 - Terminal(tmux)
 - Git
 - OpenCV 3.3.1
-- ROS melodic
+- ROS kinetic or melodic
 
 ## Setting
 ```bash
