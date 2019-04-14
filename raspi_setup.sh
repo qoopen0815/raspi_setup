@@ -81,4 +81,5 @@ setup_dotfiles
 
 source ${root_pwd_dir}/Git/git_install.sh
 source ${root_pwd_dir}/OpenCV/OpenCV3_install.sh
-source ${root_pwd_dir}/ROS/melodic_install.sh
+source ${root_pwd_dir}/ROS/kinetic_install.sh
+# source ${root_pwd_dir}/ROS/melodic_install.sh
