@@ -50,7 +50,7 @@ apt_install()
 	sudo apt install -yV gparted
 
     # install tmux
-    sudo apt install -yV tmux
+    # sudo apt install -yV tmux
 }
 
 # clone git repo
