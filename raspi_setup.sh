@@ -75,6 +75,10 @@ setup_dotfiles()
 
 set_raspi_config
 initial_update_package
+
+# set directory name as english
+LANG=C xdg-user-dirs-update --force
+
 apt_install
 git_clone
 setup_dotfiles
